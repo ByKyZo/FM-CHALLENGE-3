@@ -1,0 +1,52 @@
+.section-5{
+    margin-bottom: 100px;
+    &__heading{
+        @include headingSection;
+        &__title{
+            margin-bottom: 25px;
+        }
+    }
+    &__btn-wrapper{
+        // display: flex;
+        // justify-content: center;
+        text-align: center;
+        @media (max-width : 635px){
+            display: flex;
+            flex-direction: column;
+        }
+        &__btn{ 
+            margin: 5px;
+            color: white;
+            padding: 13px 35px;
+            border-radius: 9999px;
+            &--ios{
+                background-color: $strongCyan;
+                box-shadow: 0px 2px 0 #1e9483; // a tester d'autre couleur
+                &:hover{
+                    background-color: #5dccbb;
+                    transition: 0.1s;
+                }
+                &:active{
+                    position: relative;
+                    box-shadow: none;
+                    top: 2px;
+                    transition: 0.1s;
+                }
+            }
+            &--mac{
+                background-color: $lightBlue;
+                box-shadow: 0px 2px 0 #233cff; // a tester d'autre couleur
+                &:hover{
+                    background-color: #8896ff;
+                    transition: 0.1s;
+                }
+                &:active{
+                    position: relative;
+                    box-shadow: none;
+                    top: 2px;
+                    transition: 0.1s;
+                }
+            }
+        }
+    }
+}

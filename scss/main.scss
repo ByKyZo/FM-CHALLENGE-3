@@ -1,0 +1,64 @@
+// PRIMARY
+$strongCyan: hsl(171, 66%, 44%);
+$lightBlue: hsl(233, 100%, 69%);
+
+// SECONDARY 
+$darkGrayishBlue: hsl(210, 10%, 33%);
+$grayishBlue: hsl(201, 11%, 66%);
+
+//MIXIN HEADING SECTION
+@mixin headingSection{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 605px;
+    padding: 0 3px;
+    margin-bottom: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+html {
+    font-size: 18px;
+    @media (max-width: 635px){
+      font-size: 17px;
+    }
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    color: $grayishBlue;
+    overflow-x: hidden;
+}
+// TOUT LES TITRES H1 / H2 / H3 etc...
+.title--grey{
+    color: $darkGrayishBlue;
+}
+
+// TOUT LES H2 ( TITRE SECTION )
+.title--h2{
+    font-size: 1.8rem;
+}
+
+// TOUT LES TEXTES (en dessous des titres)
+.all__text{
+    line-height: 25px;
+}
+
+@import "./Layout/header";
+@import "./Layout/section1";
+@import "./Layout/section2";
+@import "./Layout/section3";
+@import "./Layout/section4(partner)";
+@import "./Layout/section5";
+@import "./Layout/zfooter";

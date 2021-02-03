@@ -1,0 +1,10 @@
+.section-4-partner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    &__img{
+        margin: 35px;
+    }
+}
